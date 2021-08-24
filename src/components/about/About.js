@@ -25,7 +25,7 @@ const About = () => {
                           <p>Address <span>: Ranchi, Jharkhand</span> </p>
                         </div>
                         <Button variant="contained" color="primary" className="btn_about align-self-start">
-                              <a href="#" className="btn-link">Download CV <GetApp/> </a>
+                              <a href="https://drive.google.com/uc?export=download&id=1YZW7rSjMLzsL4R_xRtqrw-_NueRqR6YG" className="btn-link">Download CV <GetApp/> </a>
                         </Button>
                     </Paper>
 
