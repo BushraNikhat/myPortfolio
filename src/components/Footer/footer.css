@@ -1,0 +1,20 @@
+.footer{
+    width: 100vw;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    height: 50px;
+    width: 50%;
+
+}
+.footer_text p{
+  color: var(--white);
+  margin-bottom: 0 !important;
+
+}

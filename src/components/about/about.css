@@ -1,0 +1,149 @@
+.about{
+    background-color: var(--white) !important;
+}
+.about_container{
+    position: relative;
+}
+.about_content_left{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.about_img{
+    height: 90%;
+    width: 50%;
+    
+}
+.about_me{
+    width: 50%;
+    height: 50%;
+    padding: 10px 2px 0 4px;
+    position: absolute;
+    left: 40%;
+}
+.animate{
+    color:var(--light-blue);
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+ 
+}
+
+@keyframes typewriter{
+    0%{
+        width: 0ch;
+    }
+100%{
+        width: 10ch;
+    }
+}
+@keyframes blinkcursor{
+   from{
+       border-right-color: var(--light-black);
+    }
+to{
+    border-right-color:transparent ;
+}
+}
+.about_me .about_info p{
+    font-weight: 700;
+    position: relative !important;
+    color: var(--black);
+   
+}
+.about_me .about_info p span{
+    position: absolute;
+    left: 30%;
+    color: var(--light-black);
+}
+.about_me .btn_about{
+    position: absolute;
+    bottom: 15px;
+
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+    .about_me{
+        width: 55%;
+    }
+   
+}
+/* medium */
+@media (min-width:768px) and (max-width:991px) {
+    .about_img{
+        height: 78%;
+    width: 58%;
+    }
+    .about_me {
+        width: 60%;
+        height: 47%;
+        left: 40%;
+    }
+    .about_me .btn_about{
+        position: absolute;
+        bottom: 5px;
+    
+    }
+    .about_me .about_info p{
+     margin-bottom: 6px !important;
+    font-size: 14px !important;
+    }
+   
+}
+
+/* small */
+@media (min-width:576px) and (max-width:767px) {
+    .about_img {
+        display: none;
+    }
+    .about_me {
+        width: 100%;
+        left: 0;
+    }
+   
+}
+
+/*x- small */
+@media (min-width:410px)  and (max-width:575px){
+    .about_img {
+        display: none;
+    }
+    .about_me {
+        width: 100%;
+        height: 52%;
+        left: 0;
+    }
+    .about_me .about_info p span {
+        left: 37%;
+    }
+   
+}
+
+/*xx- small */
+@media (max-width:409px){
+    .about_img {
+        display: none;
+    }
+    .about_me {
+        width: 100%;
+        height: 58%;
+        left: 0;
+    }
+    .about_me .about_info p span {
+        left: 37%;
+    }
+       
+    }
+
+/* landscape mode */
+
+@media (max-height:500px) and (orientation:landscape){
+    .about_me {
+     
+        height: 88%;
+
+    }
+}

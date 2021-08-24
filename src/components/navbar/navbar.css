@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Qahiri&display=swap');
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+}
+.nav-transparent{
+    background-color:transparent;
+    color: var(--white);
+}
+.nav-white{
+    background-color: var(--white);
+
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-brand{
+    color: var(--white);
+    font-size: 24px;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color: var(--light-blue) !important;
+}
+.nav-link.active {
+    color:  var(--light-blue) !important;
+  }
+
+.navbar-nav .nav-item:last-child .nav-link{
+    padding-right: 0 !important;
+}
+
+/* landscape mode */
+
+@media (max-height:500px) and (orientation:landscape){
+    .nav-transparent{
+        background-color: var(--dark-blue);
+        color: var(--white);
+    }
+
+}

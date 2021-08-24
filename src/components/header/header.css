@@ -1,0 +1,126 @@
+/* decoration of some part of header and about section */
+.main_container{
+    width: 100vw;
+    height: 100vh !important;
+    background-color:  var(--dark-blue);
+}
+.sub_container{
+    width: 100% !important;
+    height: 100vh !important;
+}
+.content_left_container,.content_right_container{
+    height: 100vh !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.content_left_container{
+    padding: 0 2px 0 0;
+}
+/* ends here */
+.content_left,.content_right{
+    width: 100% !important;
+    height: 50vh !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #000; */
+    color: var(--white) ;
+    letter-spacing: 1.5px !important;
+}
+.content_left h4{
+    margin: 0;
+}
+.content_left h2{
+    text-shadow: 0 2px 0 rgba(0,0,0,.5);
+}
+.content_left p{
+    color: inherit;
+}
+.content_left h2 span::before{
+
+    content:'';
+    /* padding-left:3px; */
+    animation: animate infinite  4s ease-in-out;
+}
+@keyframes animate{
+    0%{
+        content: "Bushra Nikhat";
+    }
+    100%{
+        content: "Web developer";
+    }
+}
+.connect{
+    margin-bottom: 16px;
+}
+.connect span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.connect span .iconButton{
+color: white;
+padding: 0;
+}
+
+.content_right{
+    align-items:flex-end;
+    
+}
+.header_image{
+    height: 90%;
+    width: 90%;
+ 
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header_image{
+        width: 100%;
+        height: 80%;
+     
+    }
+   
+}
+/* medium */
+@media (min-width:768px) and (max-width:991px) {
+    .header_image{
+        height: 70%;
+        width: 100%;
+     
+    }
+   
+}
+/* small */
+@media (min-width:576px) and (max-width:767px) {
+    .header_image{
+        display: none;
+    }
+    .content_left{
+        letter-spacing:.9px !important;
+    }  
+}
+/*x- small */
+@media (max-width:575px){
+    .header_image{
+        display: none;
+     
+    }
+   
+   
+}
+
+/* landscape mode */
+
+@media (max-height:500px) and (orientation:landscape){
+    .header_right_container{
+        display: none;
+    }
+    .header_image{
+        display: none;
+     
+    }
+    .content_left p{
+        display: block;
+    }
+}
